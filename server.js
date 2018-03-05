@@ -10,7 +10,6 @@ let result = {};
 let date;
 
 app.get('/:time', (req, res) => {
-  res.writeHead(200, {'Content-Type': 'application/json'});
   const time = req.params.time;
   if (isNaN(time)) date = new Date(time);
   else date = new Date(time * 1000);
@@ -19,7 +18,7 @@ app.get('/:time', (req, res) => {
     'unix': date.getTime() / 1000,
     'normal': month[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear()
   }
-  res.end(JSON.stringify(result));
+  res.json(result);
 });
 
 app.get('*', (req, res) => {
