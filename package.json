@@ -1,0 +1,26 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "First FCC node challenge by jeromesnail",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.17.1",
+    "npm": "^5.7.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeromesnail/timestamp-microservice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeromesnail/timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/jeromesnail/timestamp-microservice#readme"
+}
