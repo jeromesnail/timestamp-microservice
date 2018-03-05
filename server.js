@@ -2,7 +2,7 @@ const express = require('express');
 const url = require('url');
 const path = require('path');
 const app = express();
-const port = /*process.env.PORT*/ '1337';
+const port = process.env.PORT;
 
 const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const defaultResult = { 'unix': null, 'natural': null };
